@@ -1,0 +1,11 @@
+<label for="name">Task Name</label>
+<input type="text" name="name" class="form-control" placeholder="Enter Task Name" value="<%= task.name %>" required
+    autofocus>
+<label for="date">Deadline</label>
+<input type="datetime-local" name="dueDate" class="form-control" value="<%= task.dueDate%>" required>
+<label for="date">Note</label>
+<input type="textarea" name="note" class="form-control" value="<%= task.note%>" placeholder="Enter Note">
+<label for="progress">Progress</label>
+<input type="number" max="100" min="0" name="progress" class="form-control" value="<%= task.progress%>"
+    placeholder="Enter Progress(1-100)" required>
+<br>

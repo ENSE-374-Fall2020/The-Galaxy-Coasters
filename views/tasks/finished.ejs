@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/errorMessage.ejs') %>
+    <%- include('../partials/includes.ejs') %>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <h2>Finished Tasks</h2>
+                        <ul class="responsive-table">
+                            <li class="table-header">
+                                <div class="col col-1">Name</div>
+                                <div class="col col-2">Deadline</div>
+                                <div class="col col-3">Note</div>
+                                <div class="col col-4">Progress</div>
+                                <div class="col col-5">Delete</div>
+                            </li>
+                            <% tasks.forEach(task => { %>
+                            <% if (task.done != false) { %>
+                            <li class="table-row">
+                                <div class="col col-1" name="name"><%= task.name %></div>
+                                <div class="col col-2" name="dueDate"><%= task.dueDate.toLocaleString().replace(/(.*)\D\d+/, '$1') %></div>
+                                <div class="col col-3" name="note"><%= task.note %></div>
+                                <div class="col col-4" name="progress"><input type="range" value="100"><%= task.progress%>%</div>
+                                <div class="col col-5" name="btnAction"><%- include('../partials/deleteForm', 
+                                    { url: `/tasks/${task.id}` }) %></div>
+                            </li>
+                            <%} %>  
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

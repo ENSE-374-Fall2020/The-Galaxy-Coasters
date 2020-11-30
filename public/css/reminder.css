@@ -1,0 +1,27 @@
+.reminderMsg{
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #fce4e4;
+    border: 1px solid #e67173;
+    float: center;
+    padding: 5px 30px;
+    margin: 5px;
+    border-radius: 2px;
+    max-width: 220px;
+    text-align: center;
+    color: #cc0033;
+}
+.fas{
+    margin: 5px;
+}
+.notifyMsg{
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 1px solid #8f8d0c;
+    float: center;
+    padding: 5px 30px;
+    margin: 5px;
+    border-radius: 2px;
+    max-width: 220px;
+    text-align: left;
+}

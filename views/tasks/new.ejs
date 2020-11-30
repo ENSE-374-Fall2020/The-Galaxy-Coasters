@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../css/task.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/dashboard.css">
+
+  <%- include('../partials/header.ejs') %>
+  <%- include('../partials/errorMessage.ejs') %>
+  <%- include('../partials/includes.ejs') %>
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2>Create Task</h2> 
+                <div class="card-body px-lg-5 pt-0">
+                    <form action="/tasks" method="POST" class="bg-light form-group">
+                        <%- include('_form_fields') %>
+                        <a href="/tasks" class="buttonCancel">Cancel</a> 
+                        <button type="submit" class="addButton">Add Task</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

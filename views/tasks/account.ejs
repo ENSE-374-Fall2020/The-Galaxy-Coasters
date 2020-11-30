@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/css/task.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet">
+    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script defer src="/javascripts/fileUpload.js"></script>
+
+</head>
+
+<body>
+    <%- include('../partials/includes.ejs') %>
+    <input type="checkbox" id="check">
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <h3>Online <span>Planner</span></h3>
+        </div>
+        <div class="right_area">
+            <form action="/logout" method="GET"><button class="logout_btn" type="submit">Log out</button></form>
+        </div>
+    </header>
+    <div class="sidebar">
+        <center>
+            <img src="<%= user.coverImagePath %>"
+                class="profile_image" alt="">
+            <h1><%= user.firstName + " " + user.lastName %></h1>
+        </center>
+        <a href="/tasks/account"><i class="fas fa-desktop"></i><span>Account</span></a>
+        <a href="/tasks"><i class="fas fa-columns"></i><span>Dashboard</span></a>
+        <a href="/tasks/new"><i class="fas fa-tasks"></i><span>Task</span></a>
+        <a href="/tasks/finished"><i class="far fa-calendar-check"></i><span>Completed</span></a>
+        <a href="/tasks/search"><i class="fas fa-search"></i><span>Search</span></a>
+    </div>
+    </div>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container1">
+                            <div class="col">
+                            <div class="card1">
+                                <h2>Update your account</h2>
+                                <form action="/tasks/account" method="POST" enctype="multipart/form-data">
+                                    <div class="bg-light form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="username" class="form-control" placeholder="Email"
+                                        value="<%= user.username %>" required autofocus>
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" name="firstName" class="form-control"
+                                        value="<%= user.firstName%>" required autofocus>
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" name="lastName" class="form-control" value="<%= user.lastName%>"
+                                        required autofocus>
+                                    <label for="about">Information</label>
+                                    <input type="textarea" rows="30" name="about" class="form-control"
+                                        value="<%= user.about%>" placeholder="Enter information about yourself"
+                                        required>
+                                    <br>
+                                    <div class="uploadProfileText"><h9>Upload Profile Picture:</h9></div>
+                                    <input class="filepond" type="file" name="cover">
+                                    <br>
+                                    <a class="buttonCancel" href="/tasks">Cancel</a>
+                                    <button type="submit" class="addButton">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

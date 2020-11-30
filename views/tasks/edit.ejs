@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/task.css">
+
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/errorMessage.ejs') %>
+<%- include('../partials/includes.ejs') %>
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2>Edit Task</h2> 
+                <div class="card-body px-lg-5 pt-0">
+                    <form action="/tasks/<%= task.id %>?_method=PUT" method="POST" class="bg-light form-group">
+                        <%- include('_form_fields') %>
+                        <a class="buttonCancel" href="/tasks">Cancel</a>
+                        <button type="submit" class="addButton">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

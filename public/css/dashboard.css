@@ -1,0 +1,96 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -5%;
+}
+  
+h2 {
+  font-size: 500px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+.responsive-table li {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.table-header {
+  background-color:	#dcd5c2;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+.col-1 {
+  flex-basis: 20%;
+  max-width: 100px;   
+    }
+.col-2 {
+  flex-basis: 20%;
+  max-width: 100px;
+}
+.col-3 {
+  flex-basis: 20%;
+  max-width: 200px;
+}
+.col-4 {
+  flex-basis: 20%;
+  max-width: 100px;
+}
+.col-5 {
+  flex-basis: 20%;
+  max-width: 100px;
+}
+.btnEdit {
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #ddb869;
+  color: white;
+  border: 2px solid #ddb869;
+  font-size: 0.6em;
+}
+
+.btnDelete {
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #a72727;
+  color: white;
+  border: 2px solid #a72727;
+  font-size: 0.6em;
+}
+.completed{
+  color: rgba(0, 128, 0, 0.658)
+}
+.incomplete{
+  color: rgba(226, 29, 29, 0.658)
+}
+.card1{
+  background-color: transparent;
+  text-align: center;
+}
+.container1{
+  max-width: 30%;
+  vertical-align: middle;
+  position: relative;
+  left: 40%;
+}
+.uploadProfileText{
+float:left;
+margin: 4px;
+font-weight: 400;
+}

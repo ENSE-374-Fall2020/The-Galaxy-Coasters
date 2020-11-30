@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="/css/reminder.css">
+
+<% if(locals.notifyMessage != null) { %>
+<div class="notifyMsg alert-warning">
+    <i class="far fa-bell"></i> <%= notifyMessage %>
+</div>
+<% } %>

@@ -1,0 +1,151 @@
+/* Home page */
+
+body{
+    background: url("/pictures/3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .about{
+    font-style: oblique;
+    font-size:90px;
+    font-weight: bold;
+    text-shadow: 3px 2px #25331C;
+    margin:150px;
+    text-align: center;
+    color:  #d1a536;
+    height: 40px;
+  }
+  .icon{
+    font-size:45px;
+    margin:20px auto;
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    border: 2px solid #d1a536;
+    border-radius: 50%;
+  }
+  .col-md-3{  
+    box-shadow: 5px 7px 9px -3px rgb(138, 138, 119);
+    font-size:15px;
+    margin: 40px;
+    padding: 5px 12px;
+    color: #d1a536;
+  }
+  .backgroundStyle{
+    position: relative;
+    top: 100px;
+    width: 30%;
+    box-shadow: 5px 7px 9px -3px rgb(138, 138, 119);
+    font-size:15px;
+    margin: 0 auto;
+    padding: 5px 12px;
+    color: #d1a536;
+  }
+  nav{
+  position: absolute;
+  float: right;
+  top:0%;
+  padding: 20px;
+  left: 80%;
+  
+  }
+  nav ul{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  bottom: 30%;
+  }
+  nav ul .btn1{
+    color: #d1a536;
+    font-size: 16px;
+    padding: 5px 12px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #d1a536;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    background-color: white;
+  }
+  nav ul .btn1:hover {
+    background-color: rgb(236, 236, 212);
+    color:  #d1a536;
+  }
+  h3{
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /*Login Page && Create Account Page*/
+  .form-signin{
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 16px;
+   }
+  .form-signin .form-control:focus {
+    z-index: 3;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: 3px;
+    border-bottom-right-radius: 3;
+    border-bottom-left-radius: 3;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 3px;
+    border-top-left-radius: 3;
+    border-top-right-radius: 3;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: 3px;
+    border-top-left-radius: 3;
+    border-top-right-radius: 3;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: 3px;
+    border-top-left-radius: 3;
+    border-top-right-radius: 3;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin h1{
+    font-style: oblique;
+    font-size: 70px;
+    text-shadow: 1px .5px #25331C;
+    text-align: center;
+    color:  #d1a536;
+    margin: 170px auto;
+    height: 20px;
+  }
+  button.btn{
+    color: #d1a536;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: #d1a536;
+    width: 100%;
+    border: 1px solid #d1a536;
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+  button.btn:hover {
+    background-color: transparent;
+    color: white;
+  }

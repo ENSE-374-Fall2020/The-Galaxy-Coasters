@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<input type="checkbox" id="check">
+
+<header>
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>Online <span>Planner</span></h3>
+    </div>
+    <div class="right_area">
+        <form action="/logout" method="GET"><button class="logout_btn" type="submit">Log out</button></form>
+    </div>
+</header>
+<div class="sidebar">
+    <center>
+        <% if (user.coverImagePath != null) { %>
+        <img src="<%= user.coverImagePath %>" class="profile_image"
+            alt="https://www.vippng.com/png/full/416-4161690_empty-profile-picture-blank-avatar-image-circle.png">
+        <% } %>
+        <% if(user) { %>
+            <h1><%= user.firstName + " " + user.lastName %></h1>
+        <% } %>
+    </center>
+    <a href="/tasks/account"><i class="fas fa-desktop"></i><span>Account</span></a>
+    <a href="/tasks"><i class="fas fa-columns"></i><span>Dashboard</span></a>
+    <a href="/tasks/new"><i class="fas fa-tasks"></i><span>Task</span></a>
+    <a href="/tasks/finished"><i class="far fa-calendar-check"></i><span>Completed</span></a>
+    <a href="/tasks/search"><i class="fas fa-search"></i><span>Search</span></a>
+</div>
+</div>

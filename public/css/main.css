@@ -1,0 +1,227 @@
+body{
+  background: url("/pictures/3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  header{
+    position: fixed;
+    background:	#353633;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  
+  .left_area span{
+    color: #d1a536;
+  }
+  
+  .logout_btn{
+    color: #d1a536;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+    margin-top: -43px;
+    margin-right: 35px;
+    border-radius: 2px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid;
+    transition: 0.5s;
+    transition-property: background;
+  }
+  
+  .logout_btn:hover{
+    background-color: transparent;
+    color: white;
+  }
+  
+  .sidebar {
+    background:#353633;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+  }
+  
+  .sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar h1{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  
+  .sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+  }
+  
+  .sidebar a:hover{
+    background: #E5E8E1;
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+  
+  label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 290px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+    top: 21px;
+  }
+  
+  label #sidebar_btn:hover{
+    color: #d1a536;
+  }
+  
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+    text-align: center;
+  }
+  
+  .content{
+    background: url("/pictures/3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sens-serif;
+    margin-left: 250px;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+  }
+  #check{
+    display: none;
+  }
+  .container{
+    height:100%;
+    top: -70px;
+    width: 100%;
+  }
+  .row{
+    height: 100%;
+    width: 100%;
+    }
+  .col-lg-12{
+    top: 200px;
+    text-align: center;
+    left: 15px;
+  }
+  .task h7{
+    font-size: 30px;
+  }
+ 
+  .task h6{
+    font-size: 30px;
+  }
+  .task{
+    height: 100%;
+  }
+  .submitBtn{
+    border-top: 1px solid #555;
+    padding: 10px;
+  }
+  .fas{
+    text-align: center;
+  }
+  .btnAdd{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 500px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.taskName{
+  text-align: left;
+  vertical-align: middle;
+}
+.taskDate{
+  text-align: center;
+  vertical-align: middle;
+}
+.editTask{
+  text-align: right;
+  vertical-align: middle;
+}
+.taskInput{
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.editTask .btn{
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+

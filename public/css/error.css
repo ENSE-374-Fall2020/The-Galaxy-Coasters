@@ -1,0 +1,11 @@
+.errorMsg{
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+    float: center;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 30px;
+    max-width: 1000px;
+    text-align: center;
+    color: #cc0033;
+}
