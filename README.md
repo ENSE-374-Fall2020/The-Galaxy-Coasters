@@ -24,3 +24,4 @@
 
 ## Documents
 [Kanban](https://github.com/thegalaxycoasters/Online-Planner/projects/1)
+[Business Case](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Business%20Case.pdf)
