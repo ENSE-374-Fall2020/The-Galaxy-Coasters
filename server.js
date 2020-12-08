@@ -18,7 +18,7 @@ const e = require("express");
 
 app.use(methodOverride('_method'))
 
-app.use(bodyParser.urlencoded({ extended: true, limit:'50mb'}))
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 
@@ -58,7 +58,7 @@ app.post('/login', (req, res, next) => {
         if (!user) {
             console.log(info);
 
-            res.render('login', {errorMessage: "Incorrect email or password" })
+            res.render('login', { errorMessage: "Incorrect email or password" })
         }
         req.logIn(user, async function (err) {
             if (err) {
@@ -77,7 +77,7 @@ app.post('/register', (req, res) => {
     User.findOne({ username: req.body.username }).then((user) => {
         if (user) {
             return res.render('register',
-            {errorMessage: "A user has already registered with this email"}
+                { errorMessage: "A user has already registered with this email" }
             )
         }
         else {

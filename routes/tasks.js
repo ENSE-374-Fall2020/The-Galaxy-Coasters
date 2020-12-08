@@ -4,8 +4,10 @@ const multer = require('multer')
 const path = require('path')
 const Task = require('../models/task')
 const User = require('../models/user')
+
 const uploadPath = path.join('public', User.coverImageBasePath)
 const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif']
+
 const upload = multer({
     dest: uploadPath,
     fileFilter: (req, file, callback) => {
@@ -13,6 +15,7 @@ const upload = multer({
     }
 })
 
+// For tasks/Dashboard page
 router.get('/', async (req, res) => {
     if (req.isAuthenticated()) {
         try {
@@ -29,11 +32,12 @@ router.get('/', async (req, res) => {
             res.render('home')
         }
     }
-    else{
+    else {
         res.render('home')
     }
 })
 
+// For tasks/search page 
 router.get('/search', async (req, res) => {
     if (req.isAuthenticated()) {
         let searchOptions = {}
@@ -60,8 +64,7 @@ router.get('/search', async (req, res) => {
     }
 })
 
-
-//ADD TASK FOR DISPLAYIN ONLY
+// For tasks/new page create new task
 router.get('/new', async (req, res) => {
     if (req.isAuthenticated) {
         const user = await User.findOne(req.params.id)
@@ -75,9 +78,7 @@ router.get('/new', async (req, res) => {
     }
 })
 
-
-
-//CREATING TASK FOR ADD TASK
+// edit button
 router.post('/', async (req, res) => {
     if (req.isAuthenticated()) {
         let task = new Task({
@@ -103,13 +104,13 @@ router.post('/', async (req, res) => {
 
 })
 
+// editing page of that task 
 router.get('/:id/edit', async (req, res) => {
     if (req.isAuthenticated()) {
         try {
             const user = await User.findOne({})
-            console.log(user)
             const task = await Task.findById(req.params.id)
-            res.render('tasks/edit', { task: task, user: user})
+            res.render('tasks/edit', { task: task, user: user })
         } catch {
             res.render('home')
         }
@@ -119,6 +120,7 @@ router.get('/:id/edit', async (req, res) => {
     }
 })
 
+// tasks/account page 
 router.get('/account', async (req, res) => {
     if (req.isAuthenticated()) {
         try {
@@ -133,6 +135,7 @@ router.get('/account', async (req, res) => {
     }
 })
 
+// shows current account page form 
 router.post('/account', upload.single('cover'), async (req, res) => {
     if (req.isAuthenticated()) {
         const fileName = req.file.filename != null ? req.file.filename : null
@@ -163,7 +166,7 @@ router.post('/account', upload.single('cover'), async (req, res) => {
     }
 })
 
-
+// update task
 router.put('/:id', async (req, res) => {
     if (req.isAuthenticated()) {
         let task
@@ -195,6 +198,7 @@ router.put('/:id', async (req, res) => {
     }
 })
 
+// delete task from db
 router.delete('/:id', async (req, res) => {
     if (req.isAuthenticated()) {
         let task
@@ -215,6 +219,7 @@ router.delete('/:id', async (req, res) => {
     }
 })
 
+// completed tasks
 router.get('/finished', async (req, res) => {
     if (req.isAuthenticated()) {
         try {
@@ -229,6 +234,5 @@ router.get('/finished', async (req, res) => {
         res.render('/')
     }
 })
-
-
+1
 module.exports = router

@@ -1,24 +1,29 @@
-<link rel="stylesheet" href="../css/task.css">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/dashboard.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Task</title>
+    <link rel="stylesheet" href="../css/task.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
 
-  <%- include('../partials/header.ejs') %>
-  <%- include('../partials/errorMessage.ejs') %>
-  <%- include('../partials/includes.ejs') %>
+
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/errorMessage.ejs') %>
+<%- include('../partials/includes.ejs') %>
 
 <div class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h2>Create Task</h2> 
+                <h2>Create Task</h2>
                 <div class="card-body px-lg-5 pt-0">
                     <form action="/tasks" method="POST" class="bg-light form-group">
                         <%- include('_form_fields') %>
-                        <a href="/tasks" class="buttonCancel">Cancel</a> 
+                        <a href="/tasks" class="buttonCancel">Cancel</a>
                         <button type="submit" class="addButton">Add Task</button>
                     </form>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
 </div>

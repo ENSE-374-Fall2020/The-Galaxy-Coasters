@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="/css/task.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/task.css">
     <link rel="stylesheet" href="/css/dashboard.css">
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
@@ -42,8 +42,9 @@
     </header>
     <div class="sidebar">
         <center>
-            <img src="<%= user.coverImagePath %>"
-                class="profile_image" alt="">
+            <% if (user.coverImagePath != '')  { %>
+            <img src="<%= user.coverImagePath %>" class="profile_image" alt="">
+            <% } %>
             <h1><%= user.firstName + " " + user.lastName %></h1>
         </center>
         <a href="/tasks/account"><i class="fas fa-desktop"></i><span>Account</span></a>
@@ -58,30 +59,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="container1">
-                            <div class="col">
+                        <div class="col">
                             <div class="card1">
                                 <h2>Update your account</h2>
                                 <form action="/tasks/account" method="POST" enctype="multipart/form-data">
                                     <div class="bg-light form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="username" class="form-control" placeholder="Email"
-                                        value="<%= user.username %>" required autofocus>
-                                    <label for="firstName">First Name</label>
-                                    <input type="text" name="firstName" class="form-control"
-                                        value="<%= user.firstName%>" required autofocus>
-                                    <label for="lastName">Last Name</label>
-                                    <input type="text" name="lastName" class="form-control" value="<%= user.lastName%>"
-                                        required autofocus>
-                                    <label for="about">Information</label>
-                                    <input type="textarea" rows="30" name="about" class="form-control"
-                                        value="<%= user.about%>" placeholder="Enter information about yourself"
-                                        required>
-                                    <br>
-                                    <div class="uploadProfileText"><h9>Upload Profile Picture:</h9></div>
-                                    <input class="filepond" type="file" name="cover">
-                                    <br>
-                                    <a class="buttonCancel" href="/tasks">Cancel</a>
-                                    <button type="submit" class="addButton">Update</button>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="username" class="form-control" placeholder="Email"
+                                            value="<%= user.username %>" required autofocus>
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" class="form-control"
+                                            value="<%= user.firstName%>" required autofocus>
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" class="form-control"
+                                            value="<%= user.lastName%>" required autofocus>
+                                        <label for="about">Information</label>
+                                        <input type="textarea" rows="30" name="about" class="form-control"
+                                            value="<%= user.about%>" placeholder="Enter information about yourself">
+                                        <br>
+                                        <div class="uploadProfileText">
+                                            <h9>Upload Profile Picture:</h9>
+                                        </div>
+                                        <input class="filepond" type="file" name="cover">
+                                        <br>
+                                        <a class="buttonCancel" href="/tasks">Cancel</a>
+                                        <button type="submit" class="addButton">Update</button>
                                 </form>
                             </div>
                         </div>
@@ -91,4 +93,3 @@
         </div>
     </div>
 </body>
-
