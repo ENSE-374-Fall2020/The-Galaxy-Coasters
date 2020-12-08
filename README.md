@@ -22,7 +22,7 @@
 * [VLOG#1](https://www.youtube.com/watch?v=1UI_BHZavNo)
 * [VLOG#2](https://www.youtube.com/watch?v=V4jqAHabfxw)
 * [VLOG#3](https://youtu.be/mJXggnIQv2w)
-* [Final Demo](https://youtu.be/mJXggnIQv2w)
+* [Final Demo](https://www.youtube.com/watch?v=zONECU2wiyU&feature=youtu.be)
 
 ## Documents
 * [Kanban](https://github.com/thegalaxycoasters/Online-Planner/projects/1)
