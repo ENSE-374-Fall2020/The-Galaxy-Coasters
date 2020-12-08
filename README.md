@@ -7,15 +7,20 @@
 * [Final Demo](https://youtu.be/mJXggnIQv2w)
 
 ## Installation guide
-1. Download the zip file under code on master branch.
-2. Extract folder in VS code
-3. Install module packages by typing on the terminal
+1. Install node, visual code and mongo.
+2. Download the zip file under code on master branch.
+3. Extract folder in VS code
+4. Install module packages by typing on the terminal
   ```sh
   npm install
   ```
-4. Run server.js on the terminal
+5. Run server.js on the terminal
   ```sh
   node server.js
   ```
-5. Open http://localhost:3000/ on your browser.
+6. Open http://localhost:3000/ on your browser.
 
+## [Final Project Report](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Final%20Project%20Document.pdf)
+
+## Documents
+[Kanban](https://github.com/thegalaxycoasters/Online-Planner/projects/1)
