@@ -23,10 +23,10 @@
 ## [Final Project Report](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Final%20Project%20Document.pdf)
 
 ## Documents
-*[Kanban](https://github.com/thegalaxycoasters/Online-Planner/projects/1)
-*[Business Case](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Business%20Case.pdf)
-*[Project Charter](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Charter.pdf)
-*[Project Roles & Responsibility](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Roles%20%26%20Responsibilities%20%2B%20RACI%20Chart.pdf)
-*[Project Scope](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Scope%20Statement.pdf)
-*[Risk Response Plan](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Risk%20Response%20Plan.pdf)
-*[Stakeholder Analysis & Management Plan](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Stake%20Holder%20Analysis%20%26%20Management%20Plan.pdf)
+* [Kanban](https://github.com/thegalaxycoasters/Online-Planner/projects/1)
+* [Business Case](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Business%20Case.pdf)
+* [Project Charter](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Charter.pdf)
+* [Project Roles & Responsibility](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Roles%20%26%20Responsibilities%20%2B%20RACI%20Chart.pdf)
+* [Project Scope](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Project%20Scope%20Statement.pdf)
+* [Risk Response Plan](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Risk%20Response%20Plan.pdf)
+* [Stakeholder Analysis & Management Plan](https://github.com/thegalaxycoasters/Online-Planner/blob/master/Documentations/Activity%20%232%20(Updated)/Stake%20Holder%20Analysis%20%26%20Management%20Plan.pdf)
